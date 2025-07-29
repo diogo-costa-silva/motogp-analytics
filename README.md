@@ -20,6 +20,6 @@ git commit -m "Initial commit"
 gh repo create motogp-analytics --public --source=. --push
 
 # Push to GitHub
-git push origin master
+git push origin main
 ```
 
