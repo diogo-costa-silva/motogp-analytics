@@ -61,3 +61,23 @@ Posteriormente, podes adicionar requests, sqlalchemy, etc., conforme fores preci
 ```bash
 pip freeze > requirements.txt
 ```
+
+---
+
+## 6. Colocar projetos no GitHub
+
+```bash
+# Initial setup
+gset-dcs
+gh dcs
+
+# Add & Commit 
+git add .
+git commit -m "Initial commit"
+
+# Create GitHub repository
+gh repo create motogp-analytics --public --source=. --push
+
+# Push to GitHub
+git push origin master
+```
