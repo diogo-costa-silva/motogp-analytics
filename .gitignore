@@ -1,0 +1,27 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Claude Code
+CLAUDE.md
+
+# Compilados Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+
+# Mac
+.DS_Store
+
+# Logs temporários
+*.log
