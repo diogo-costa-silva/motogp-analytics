@@ -1,0 +1,1 @@
+"""Test suite for MotoGP Analytics project."""

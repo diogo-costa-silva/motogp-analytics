@@ -2,17 +2,26 @@
 
 A comprehensive data analysis project exploring MotoGP World Championship data from 1949 to 2022. This project provides insights into racing performance, constructor championships, rider statistics, and historical trends in motorcycle racing.
 
+## 🚀 Key Components
+
+- **📊 Analytics Notebooks**: 27 CRISP-DM structured notebooks for comprehensive analysis
+- **🏗️ Database Infrastructure**: PostgreSQL schema with 13 tables and materialized views
+- **🔌 REST API**: FastAPI application with comprehensive endpoints
+- **📱 Interactive Demo**: Streamlit application for data visualization
+- **💼 Business Intelligence**: Strategic recommendations and KPIs
+
 ## Data Source
 
 Data sourced from [Kaggle MotoGP World Championship Dataset](https://www.kaggle.com/datasets/alrizacelk/moto-gp-world-championship19492022)
 
 ## Features
 
-- 📊 Constructor championship analysis
-- 🏁 Race winner statistics and trends
-- 👥 Rider performance and career analysis
-- 🌍 National representation in podium finishes
-- 📈 Historical data visualization and insights
+- 📊 Constructor championship analysis and dominance patterns
+- 🏁 Race winner statistics and predictive modeling
+- 👥 Rider performance analytics and career trajectory analysis
+- 🌍 Geographic analysis and market expansion insights
+- 🏁 Circuit intelligence and home advantage analysis
+- 📈 Executive dashboards and strategic recommendations
 
 ## Dataset Overview
 
@@ -36,17 +45,43 @@ uv sync
 pip install -r requirements.txt
 ```
 
-## Usage
+## Quick Start
 
-Explore the analysis through Jupyter notebooks:
-
+### 1. Analytics Notebooks
+Explore comprehensive CRISP-DM analysis:
 ```bash
 # Start Jupyter notebook server
-jupyter notebook
+uv run jupyter notebook
 
-# Navigate to notebooks directory and open:
-# - 00_data_download.ipynb - Data acquisition and preprocessing
-# - 01_constructure_world_championship.ipynb - Constructor analysis
+# Explore notebooks in structured phases:
+# - 00_business_understanding/
+# - 01_data_understanding/
+# - 02_data_preparation/ 
+# - 03_modeling/
+# - 04_evaluation/
+# - 05_deployment/
+```
+
+### 2. Interactive Demo App
+Launch the Streamlit demonstration:
+```bash
+# Run interactive demo
+uv run python apps/streamlit_demo/run_app.py
+
+# Access at: http://localhost:8501
+```
+
+### 3. Database & API Setup
+Set up the complete database infrastructure:
+```bash
+# Install dependencies and setup database
+cd database/
+python setup_database.py --sample-data
+
+# Launch API server
+uv run python api/main.py
+
+# Access API docs at: http://localhost:8000/docs
 ```
 
 ## Requirements
@@ -62,12 +97,37 @@ jupyter notebook
 
 ```
 motogp-analytics/
-├── data/raw/           # Raw CSV data files
-├── notebooks/          # Jupyter analysis notebooks
-├── README.md          # Project documentation
-├── requirements.txt   # Python dependencies
-└── pyproject.toml    # Project configuration
+├── apps/                   # Applications
+│   └── streamlit_demo/     # Interactive Streamlit demo
+├── data/                   # Data pipeline (follows industry standards)
+│   ├── raw/               # Original CSV datasets (immutable)
+│   ├── interim/           # Processed data from Phase 02 (CRISP-DM)
+│   ├── processed/         # Final analysis-ready datasets
+│   └── external/          # External data sources (future)
+├── database/              # Database infrastructure
+│   ├── api/               # FastAPI REST API
+│   ├── etl/               # Data import scripts
+│   ├── schema/            # PostgreSQL schema
+│   └── setup_database.py  # Database setup
+├── notebooks/             # CRISP-DM analysis (27 notebooks)
+│   ├── 00_business_understanding/
+│   ├── 01_data_understanding/
+│   ├── 02_data_preparation/
+│   ├── 03_modeling/
+│   ├── 04_evaluation/
+│   └── 05_deployment/
+├── pyproject.toml         # UV project configuration
+└── README.md             # This documentation
 ```
+
+## Technology Stack
+
+- **Data Analysis**: Python, Pandas, NumPy, Matplotlib, Seaborn
+- **Database**: PostgreSQL with materialized views
+- **API**: FastAPI with Pydantic models
+- **Frontend**: Streamlit with Plotly visualizations  
+- **Package Management**: UV (modern Python packaging)
+- **Methodology**: CRISP-DM for systematic analysis
 
 ## Contributing
 
