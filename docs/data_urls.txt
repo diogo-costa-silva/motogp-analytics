@@ -1,0 +1,6 @@
+https://raw.githubusercontent.com/dipedilans/assets/refs/heads/main/Moto_GP_World_Championship_1949-2022/constructure-world-championship.csv
+https://raw.githubusercontent.com/dipedilans/assets/refs/heads/main/Moto_GP_World_Championship_1949-2022/grand-prix-events-held.csv
+https://raw.githubusercontent.com/dipedilans/assets/refs/heads/main/Moto_GP_World_Championship_1949-2022/grand-prix-race-winners.csv
+https://raw.githubusercontent.com/dipedilans/assets/refs/heads/main/Moto_GP_World_Championship_1949-2022/riders-finishing-positions.csv
+https://raw.githubusercontent.com/dipedilans/assets/refs/heads/main/Moto_GP_World_Championship_1949-2022/riders-info.csv
+https://raw.githubusercontent.com/dipedilans/assets/refs/heads/main/Moto_GP_World_Championship_1949-2022/same-nation-podium-lockouts.csv

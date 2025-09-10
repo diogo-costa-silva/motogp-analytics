@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+.vscode/
+.claude
+
+# Ambiente Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Claude
+tasks/
+claude.md
+
+# Virtual env (se existir dentro do repo)
+.venv/
